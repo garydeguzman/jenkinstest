@@ -12,7 +12,7 @@ pipeline {
 				sh './build.sh' // For Java: mvn clean package
 			}
 		}
-		/**
+		
 		stage('Test') {
 			steps {
 				sh 'pytest tests/' // For Python
@@ -22,6 +22,6 @@ pipeline {
 			steps {
 				sh 'dependency-check --scan ./ --out report'
 			}
-		}**/
+		}
 	}  // closing stages
 } //closing pipline
