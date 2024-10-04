@@ -1,4 +1,4 @@
-#Snippet 3
+
 pipeline {
 	agent any
 	stages {
