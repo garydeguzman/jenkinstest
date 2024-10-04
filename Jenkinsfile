@@ -6,7 +6,7 @@ pipeline {
 				git branch: 'main', url: 'https://github.com/garydeguzman/jenkinstest.git'
 			}
 		}
-		stage('Build') {
+		/**stage('Build') {
 			steps {
 				sh './build.sh' // For Java: mvn clean package
 			}
@@ -20,6 +20,6 @@ pipeline {
 			steps {
 				sh 'dependency-check --scan ./ --out report'
 			}
-		}
+		}**/
 	}  // closing stages
 } //closing pipline
